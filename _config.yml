@@ -45,7 +45,7 @@ kramdown:
 # theme                  : "minimal-mistakes-jekyll"
 #below the remote_theme should still make everything work.
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin    : "dirt" #"default"  "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" #"default"  "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Outputting
 permalink: /:categories/:title/
