@@ -21,6 +21,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 twitter_username: username
 github_username: username
+minimal_mistakes_skin: "default"
+#minimal_mistakes_skin: default
+#minimal_mistakes_skin    : "air" #"default"  "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 search: true
 
 # Build settings or maybe Conversion
@@ -44,8 +48,6 @@ kramdown:
 # theme                  : "minimal-mistakes-jekyll"
 #below the remote_theme should still make everything work.
 remote_theme: mmistakes/minimal-mistakes
-#minimal_mistakes_skin: default
-minimal_mistakes_skin    : "air" #"default"  "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Outputting
 permalink: /:categories/:title/
