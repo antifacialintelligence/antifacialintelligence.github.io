@@ -7,7 +7,11 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
+minimal_mistakes_skin: "neon"
+#minimal_mistakes_skin    : "air" #"default"  "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# theme                  : "minimal-mistakes-jekyll"
+#below the remote_theme should still make everything work.
+remote_theme: mmistakes/minimal-mistakes
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -97,12 +101,6 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-
-minimal_mistakes_skin: "air"
-#minimal_mistakes_skin    : "air" #"default"  "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-# theme                  : "minimal-mistakes-jekyll"
-#below the remote_theme should still make everything work.
-remote_theme: mmistakes/minimal-mistakes
 
 # Build settings or maybe Conversion
 markdown: kramdown
