@@ -131,6 +131,7 @@ kramdown:
 #below the remote_theme should still make everything work.
 remote_theme: mmistakes/minimal-mistakes
 <<<<<<< HEAD
+<<<<<<< HEAD
 # remote_theme           : "mmistakes/minimal-mistakes"
 #minimal_mistakes_skin: default
 minimal_mistakes_skin    : "air" #"default"  "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -151,6 +152,8 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
+=======
+>>>>>>> 7309ccbc222d3297da8148c7e435251b985d6103
 
 # Outputting
 permalink: /:categories/:title/
