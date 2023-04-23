@@ -9,7 +9,7 @@ main:
     url: /about/
 #from minimal mistakes default
 # main links
-main2:
+mmainn:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
    - title: "About"
@@ -42,7 +42,7 @@ foo:
 
 
 # main links
-main3:
+mmmainnn:
   - title: "Quick-Start Guide"
     url: /docs/quick-start-guide/
   - title: "About"
