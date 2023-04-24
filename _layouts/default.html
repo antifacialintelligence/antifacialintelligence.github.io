@@ -10,10 +10,11 @@ author_profile: false
     {% include head.html %}
     {% include head/custom.html %}
   </head>
+  <!-- <p>this default0</p> -->
   <!-- <p>{{page.layout}}</p>
   <p>{{page.author_profile}}</p>
-  <p>{{page.title}}</p> -->
-  <p>{{site.search}}</p>
+  <p>{{page.title}}</p>
+  <p>{{site.search}}</p> -->
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
   <!-- <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}"> -->
