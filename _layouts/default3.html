@@ -1,4 +1,5 @@
 ---
+#access the below variable with {{layout.author_profile}}
 author_profile: false
 #to access the below variable with {{layout.title}}
 title: default3Title
@@ -11,12 +12,7 @@ title: default3Title
     {% include head/custom.html %}
   </head>
   <!-- <p>{{page.layout}}</p>
-  <p>{{page.author_profile}}</p>
-  <p>{{layout.author_profile}}</p>
-  <p>{{page.title}}</p>
-  <p>{{layout.title}}</p>
   <p>{{site.search}}</p> -->
-<!-- <p>this default3</p> -->
 <!-- <p>{{ default: 'Menu' }}</p> -->
 <!-- <p>{{ site.data.theme.t.menu | default: 'Menu' }}</p> -->
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -39,6 +35,12 @@ title: default3Title
           <span class="navicon"></span>
         </span>
       </button>
+    </div>
+    <div id="sidebar" class="sidebarbasic">
+      <div class="inner">
+        {% include navigation.html %}
+        <!-- {% include contact-list.html %} -->
+      </div>
     </div>
 
     <div class="initial-content">
