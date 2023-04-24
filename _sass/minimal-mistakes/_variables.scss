@@ -43,11 +43,16 @@ $monospace-font-family: Menlo, Consolas, Monaco, "Courier New", Courier,
 $base-color: #393e46 !default;
 $accent-color: #00838a !default;
 $overlay-color: $base-color !default;
+$small-duplicated: 600px !default;
+$medium-duplicated: 768px !default;
+$medium-wide-duplicated: 900px !default;
+$large-duplicated: 1024px !default;
+$x-large-duplicated: 1280px !default;
 /* Max-width of the main content */
-$main-max-width: $xlarge !default;
+$main-max-width: $xlarge-duplicated !default;
 
 /* Width of the sidebar */
-$sidebar-width: $small !default;
+$sidebar-width: $small-duplicated !default;
 
 /* Background color of the sidebar */
 $sidebar-background-color: #fff !default;
