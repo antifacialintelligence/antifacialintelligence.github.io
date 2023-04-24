@@ -9,10 +9,9 @@ author_profile: false
     {% include head/custom.html %}
   </head>
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}">
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-  
     {% include skip-links.html %}
 
+    
     <div class="sidebar-toggle-wrapper">
       {% if site.search %}
         <button class="search-toggle" type="button">
