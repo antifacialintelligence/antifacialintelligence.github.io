@@ -16,6 +16,8 @@ author_profile: false
   <p>{{layout.title}}</p>
   <p>{{site.search}}</p> -->
 <!-- <p>this default3</p> -->
+<!-- <p>{{ default: 'Menu' }}</p> -->
+<!-- <p>{{ site.data.theme.t.menu | default: 'Menu' }}</p> -->
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
   <!-- <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}"> -->
     {% include_cached skip-links.html %}
