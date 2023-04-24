@@ -11,7 +11,7 @@ author_profile: false
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}">
     {% include skip-links.html %}
 
-    
+
     <div class="sidebar-toggle-wrapper">
       {% if site.search %}
         <button class="search-toggle" type="button">
@@ -31,6 +31,9 @@ author_profile: false
     </div>
 
     <div id="sidebar" class="sidebar">
+
+
+        
       <div class="inner">
         {% include navigation.html %}
         {% include contact-list.html %}
