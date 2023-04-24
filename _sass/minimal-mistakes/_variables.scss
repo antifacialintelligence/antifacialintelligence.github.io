@@ -2,9 +2,11 @@
    Variables
    ========================================================================== */
 /* Fluid type */
+$small-for-fluid: 320px !default;
+$xlarge-for-fluid: 1280px !default;
 $base-font-size: 16px !default;
-$min-vw: $small !default;
-$max-vw: $xlarge !default;
+$min-vw: $small-for-fluid !default;
+$max-vw: $xlarge-for-fluid !default;
 $min-font-size: 14px !default;
 $max-font-size: 18px !default;
 
