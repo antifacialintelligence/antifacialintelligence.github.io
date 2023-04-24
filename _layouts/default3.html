@@ -18,7 +18,7 @@ title: default3Title
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
   <!-- <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}"> -->
     {% include_cached skip-links.html %}
-    <!-- {% include_cached masthead.html %} -->
+    {% comment %}{% raw %} {% include_cached masthead.html %} {% endraw %}{% endcomment %}
     <div class="sidebar-toggle-wrapper">
       {% if site.search %}
         <button class="search-toggle" type="button">
