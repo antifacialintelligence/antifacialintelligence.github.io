@@ -2,6 +2,22 @@
    SEARCH
    ========================================================================== */
 
+.search-toggle {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+
+  .icon {
+    @include fluid-type($min-vw, $max-vw, 20px, 24px);
+    fill: $navicon-content-bg;
+  }
+}
+
 .layout--search {
   .archive__item-teaser {
     margin-bottom: 0.25em;
