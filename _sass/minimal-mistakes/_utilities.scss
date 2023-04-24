@@ -329,7 +329,51 @@ body:hover .visually-hidden button {
 /*
    Navicons
    ========================================================================== */
+.navicon-button {
+  display: inline-block;
+  position: relative;
+  padding: 0.90625rem 0;
+  min-height: $site-image-height;
+  -webkit-transition: $navicon-duration / 2;
+  transition: $navicon-duration / 2;
+  border: 0;
+  outline: none;
+  background-color: $navicon-nav-bg-close;
+  line-height: 5 * $navicon-height;
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 
+  &.open {
+    background-color: $navicon-nav-bg-open;
+  }
+
+  .navicon::before,
+  .navicon::after {
+    -webkit-transition-duration: $navicon-duration / 2;
+    transition-duration: $navicon-duration / 2;
+  }
+
+  &:hover {
+    -webkit-transition-duration: $navicon-duration;
+    transition-duration: $navicon-duration;
+
+    .navicon::before,
+    .navicon::after {
+      -webkit-transition-duration: $navicon-duration / 2;
+      transition-duration: $navicon-duration / 2;
+    }
+
+    .navicon::before {
+      top: (2.5 * $navicon-height);
+    }
+    .navicon::after {
+      top: (-2.5 * $navicon-height);
+    }
+  }
+}
 .navicon {
   position: relative;
   width: $navicon-width;
