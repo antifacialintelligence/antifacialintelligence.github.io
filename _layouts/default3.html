@@ -1,7 +1,7 @@
 ---
 author_profile: false
 #don't think the title variable below can ever do anything
-#title: defaultTitle
+title: default3Title
 ---
 
 <!doctype html>
@@ -12,7 +12,10 @@ author_profile: false
   </head>
   <!-- <p>{{page.layout}}</p>
   <p>{{page.author_profile}}</p>
+  <p>page.title</p>
   <p>{{page.title}}</p>
+  <p>layout.title</p>
+  <p>{{layout.title}}</p>
   <p>{{site.search}}</p> -->
 <!-- <p>this default3</p> -->
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
