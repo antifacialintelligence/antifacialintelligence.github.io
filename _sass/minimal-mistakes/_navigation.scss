@@ -1,7 +1,24 @@
 /* ==========================================================================
    NAVIGATION
    ========================================================================== */
+/*copied from basic*/
+/* ==========================================================================
+   List Mixins
+   ========================================================================== */
 
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.menu {
+  @include list-unstyled;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
 /*
    Breadcrumb navigation links
    ========================================================================== */
