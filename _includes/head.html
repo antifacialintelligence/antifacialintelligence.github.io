@@ -22,6 +22,11 @@
 <p>{{ site }}</p>
 <p>below is value of site.head_scripts</p>
 <p>{{ site.head_scripts }}</p>
+<--
+{% for key in site.keys %}
+{{ key }}: {{ site[key] }}
+{% endfor %}
+    -->
 {% if site.head_scripts %}
   <p>inside site.head_scripts</p>
   <p>{{ site.head_scripts }}</p>
