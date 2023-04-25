@@ -7,16 +7,8 @@ title: default3Title
 
 <!doctype html>
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-  <!-- <p>{{page.layout}}</p>
-  <p>{{site.search}}</p> -->
-<!-- <p>{{ default: 'Menu' }}</p> -->
-<!-- <p>{{ site.data.theme.t.menu | default: 'Menu' }}</p> -->
+  <head>{% include head.html %}</head>
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-  <!-- <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}"> -->
     {% include_cached skip-links.html %}
     {% comment %}{% raw %} {% include_cached masthead.html %} {% endraw %}{% endcomment %}
     <div class="sidebar-toggle-wrapper">
