@@ -148,6 +148,12 @@
 }
 
 .canvass {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+  }
+
+.canvass {
   position: relative;
   width: 100%;
   overflow: hidden;
