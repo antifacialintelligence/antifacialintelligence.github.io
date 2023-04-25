@@ -34,16 +34,18 @@ title: default3Title
         {% comment %}{% raw %} {% include contact-list.html %}{% endraw %}{% endcomment %}
       </div>
     </div>
+    <div class="canvass">
+      <div class="wrapperr">
+        {% comment %}{% raw %} {% include masthead.html %}{% endraw %}{% endcomment %}
+        <div class="initial-content">
+          {{ content }}
+        </div>
 
-    <div class="initial-content">
-      {{ content }}
-    </div>
-
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
+        <div class="search-content">
+          {% include search-form.html %}
+        </div>
       </div>
-    {% endif %}
+    </div>
 
     <div id="footer" class="page__footer">
       <footer>
