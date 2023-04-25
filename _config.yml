@@ -19,6 +19,8 @@ minimal_mistakes_skin: "miro"
 # in the templates via {{ site.myvariable }}.
 title: "Antifacial Intelligence"
 email: gavin@antifacialintelligence.com
+head_scripts:
+  - /assets/js/miro.js
 
 twitter_username: username
 github_username: antifacialintelligence
