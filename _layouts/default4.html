@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
-  {% include head.html %}
+---
+#access the below variable with {{layout.author_profile}}
+author_profile: false
+#to access the below variable with {{layout.title}}
+title: default3Title
+---
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}">
-
-    {% include skip-links.html %}
-
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>{% include head.html %}</head>
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    {% include_cached skip-links.html %}
+    {% comment %}{% raw %} {% include_cached masthead.html %} {% endraw %}{% endcomment %}
     <div class="sidebar-toggle-wrapper">
       {% if site.search %}
         <button class="search-toggle" type="button">
@@ -23,27 +28,33 @@
         </span>
       </button>
     </div>
-
     <div id="sidebar" class="sidebarbasic">
       <div class="inner">
         {% include navigation.html %}
+        {% comment %}{% raw %} {% include contact-list.html %}{% endraw %}{% endcomment %}
       </div>
     </div>
-
     <div class="canvass">
       <div class="wrapperr">
+        {% comment %}{% raw %} {% include masthead.html %}{% endraw %}{% endcomment %}
         <div class="initial-content">
           {{ content }}
         </div>
 
         <div class="search-content">
+            {% comment %}{% raw %} {% include search-form.html %}{% endraw %}{% endcomment %}
         </div>
       </div>
     </div>
 
-    {% include footer.html %}
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/miro.js' | relative_url }}"></script>
     {% include scripts.html %}
 
   </body>
-
 </html>
