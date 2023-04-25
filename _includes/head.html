@@ -21,7 +21,7 @@
 
 {% if site.head_scripts %}
   <p>inside site.head_scripts</p>
-  <p>{% site.head_scripts %}</p>
+  <p>{{ site.head_scripts }}</p>
   <p>about to enter for loop</p>
   {% for script in site.head_scripts %}
     <script src="{{ script | relative_url }}"></script>
