@@ -25,7 +25,7 @@ function animateMenuItems() {
   }
 };
 
-var myWrapper = document.querySelector('.wrapper');
+var myWrapper = document.querySelector('.wrapperr');
 var myMenu = document.querySelector('.sidebarbasic');
 var myToggle = document.querySelector('.toggle');
 var myInitialContent = document.querySelector('.initial-content');
