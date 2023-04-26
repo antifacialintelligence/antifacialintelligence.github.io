@@ -28,7 +28,7 @@ function animateMenuItems() {
 var myWrapper = document.querySelector('.wrapperr');
 var myMenu = document.querySelector('.sidebarbasic');
 var myToggle = document.querySelector('.toggle');
-var myInitialContent = document.querySelector('.initial-content');
+var myInitialContent = document.querySelector('.initial-contentt');
 var mySearchContent = document.querySelector('.search-content');
 var mySearchToggle = document.querySelector('.search-toggle');
 
