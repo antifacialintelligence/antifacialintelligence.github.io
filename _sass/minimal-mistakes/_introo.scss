@@ -65,3 +65,18 @@
     line-height: 1.625;
   }
 }
+
+/*
+   Sidebar Pusher [Miro: copied from basic]
+   ========================================================================== */
+
+   .is--pushed {
+    transform: translateX(1 * $sidebar-width);
+    transform-origin: right;
+    
+    @include breakpoint($large) {
+      transform: translateX(1.5 * $sidebar-width);
+    }
+  }
+
+  
