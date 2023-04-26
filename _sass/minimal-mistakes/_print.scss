@@ -189,7 +189,9 @@
   #main {
     max-width: 100%;
   }
-
+  #mainn {
+    max-width: 100%;
+  }
   .inner {
     margin: 0;
     padding: 0;
@@ -201,6 +203,11 @@
     margin: 0;
     padding: 0;
     width: 100%;
+  }
+
+  .intro-actions .btn {
+    color: #fff;
+    background: #000;
   }
 
   .page-break,
