@@ -1,7 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
-Gemfile.lock
+#Gemfile.lock
 
 #everything below here is copied from minimal mistakes github template
 # Vim
