@@ -21,7 +21,7 @@ title: "Antifacial Intelligence"
 email: gavin@antifacialintelligence.com
 #head_scripts:
 #  - /assets/js/miro.js
-
+server: localhost:4000
 twitter_username: username
 github_username: antifacialintelligence
 search: true
@@ -204,6 +204,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - webrick
 
 # mimic GitHub Pages with --safe
 whitelist:
